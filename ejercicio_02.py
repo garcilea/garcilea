@@ -43,12 +43,12 @@ while respuesta == "s" :
     precio_por_kilo = int(input("cual es el precio por kilo ? : "))
 
     while precio_por_kilo < 1 : 
-         precio_por_kilo = int(input("cual es el precio por kilo ? : "))
+        precio_por_kilo = int(input("cual es el precio por kilo ? : "))
     
     tipo_alimento = input("Escriba un tipo de alimento [v, a , m ] ")
 
     while tipo_alimento != "v" and tipo_alimento != "a" and tipo_alimento != "m":
-         tipo_alimento = input("Escriba un tipo de alimento [v, a , m ] ")
+        tipo_alimento = input("Escriba un tipo de alimento [v, a , m ] ")
 
     importe_bruto = precio_por_kilo * peso
 
