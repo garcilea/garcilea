@@ -85,15 +85,23 @@ print(tupla_habilidades_UTN)
 dic_habilidades_UTN = {'Habilidades_UTN': tupla_habilidades_UTN}
 print(dic_habilidades_UTN)
 
+# creo una variable que me permita acceder a la lista dentro de la key
 lista_habilidades = dic_habilidades_UTN['Habilidades_UTN']
 print(lista_habilidades)
 
-i = 1
-for habilidades_str in lista_habilidades:
-    
-    habilidades_str = "habilidad {0}: {1} | Poder {2}".format(i, habilidades_str[0], habilidades_str[1])
 
+i = 1
+# recorro la lista con una variable
+for habilidades_str in lista_habilidades:
+    # esa variable va a contener un texto otras variables ---> uso el format
+    # a cada variable le asigno el {} dentro del string
+    # ese numero referencia a la posicion de lo que le voy a pasar como parametro en el () del format
+    # habilidades_str = "habilidad {0}: {1} | Poder {2}".format(i, habilidades_str[0], habilidades_str[1])
+    habilidades_str = f'habilidad {i}: {habilidades_str[0]} | Poder {habilidades_str[1]}'
+    # habilidad 1: Vuelo | Poder 32
     print(habilidades_str)
+    # incremento la i ---> para el numero de habilidad incremente para que la siguiente vuelta quede asi
+    # habilidad 2: Vision-X | Poder 64
     i += 1
 
 

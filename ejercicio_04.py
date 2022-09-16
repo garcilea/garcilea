@@ -9,7 +9,7 @@ TIP: Las habilidades están repetidas, busca la manera de que en el resultado fi
 duplicados, que usarías para eso?
 """
 
-from math import inf
+
 
 
 heroes_para_reclutar = [
