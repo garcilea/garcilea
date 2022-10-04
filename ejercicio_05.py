@@ -1,3 +1,7 @@
+
+
+
+
 """
 En la base de datos de la división de armamento de industrias Wayne se tiene una información 
 la cual están con la necesidad de cambiar el formato la lista de habilidades con sus respectivos

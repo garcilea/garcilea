@@ -1,22 +1,7 @@
 from data_stark import lista_personajes
 
-"""
-lista_personajes =
-[
- {
-   "nombre": "Howard the Duck",
-   "identidad": "Howard (Last name unrevealed)",
-   "empresa": "Marvel Comics",
-   "altura": "79.349999999999994",
-   "peso": "18.449999999999999",
-   "genero": "M",
-   "color_ojos": "Brown",
-   "color_pelo": "Yellow",
-   "fuerza": "2",
-   "inteligencia": "average"
- },
- 
-"""
+
+
 def nombres_cada_heroe_masculinos():
     for heroe in lista_personajes:
         if heroe["genero"] == "M":
@@ -177,7 +162,7 @@ def cantidad_por_tipo_inteligencia():
 
 cantidad_por_tipo_inteligencia()        
 
-def lista_heroe_por_color_de_ojos():
+def agrupa_heroe_por_color_de_ojos():
    
     
     dic_nombre_ojos = {}
@@ -198,7 +183,6 @@ def lista_heroe_por_color_de_ojos():
         mensaje = f'estos son los superheores {concepto}, con color de ojos {clave}'
         print(mensaje)
              
-lista_heroe_por_color_de_ojos()
 
 
 
@@ -249,7 +233,7 @@ def agrupa_heroe_por_tipo_inteligencia():
 
 """ 
 while True:
-    respuesta = input("\n1 - nombre de todos los superheroes genero masculino\n
+    respuesta = input("1 - nombre de todos los superheroes genero masculino\n
                          2 - nombre de todos los superheroes genero femenino\n
                          3 -  superheroe mas alto masculino\n
                          4 - superheroe mas alto femenino\n
